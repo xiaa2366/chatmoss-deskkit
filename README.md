@@ -1,4 +1,4 @@
-# chatmoss-deskKit
+# ChatMoss DeskKit
 
 <h2 align="center">
 	<img src="https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/deskkit.png" height="64">
