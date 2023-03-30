@@ -1,58 +1,17 @@
-const { parsed } = require("dotenv").config();
 module.exports = {
-  packagerConfig: {
-    name: "ChatGPT",
-    executableName: "ChatGPT",
-    icon: "images/icon",
-    appBundleId: "com.vincelwt.chatgptmac",
-    extendInfo: {
-      LSUIElement: "true",
+    packagerConfig: {
+      name: "ChatMoss",
+      executableName: "ChatMoss",
+      icon: "images/icon",
+      osxSign: {},
     },
-    osxSign: {
-      hardenedRuntime: false,
-      gatekeeperAssess: false,
-      identity: "Developer ID Application: Lyser.io Ltd (R4PF6TTR6Z)",
-    },
-    osxNotarize: {
-      appBundleId: "com.vincelwt.chatgptmac",
-
-      tool: "notarytool",
-      appleId: 'img.zhu.electron',
-      appleIdPassword: 'test',
-      teamId: '13',
-    },
-  },
-  publishers: [
-    {
-      name: "@electron-forge/publisher-github",
-      config: {
-        repository: {
-          owner: "vincelwt",
-          name: "chatgpt-mac",
+    makers: [
+        {
+          name: '@electron-forge/maker-squirrel',
+          config: {
+            certificateFile: './cert.pfx',
+            certificatePassword: 'chatmoss',
+          },
         },
-        prerelease: true,
-      },
-    },
-  ],
-
-  rebuildConfig: {},
-  makers: [
-    {
-      name: "@electron-forge/maker-squirrel",
-      config: {},
-    },
-    {
-      name: "@electron-forge/maker-dmg",
-      platforms: ["darwin"],
-      config: {},
-    },
-    {
-      name: "@electron-forge/maker-deb",
-      config: {},
-    },
-    {
-      name: "@electron-forge/maker-rpm",
-      config: {},
-    },
-  ],
-};
+    ]
+}

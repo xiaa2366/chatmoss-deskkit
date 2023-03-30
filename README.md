@@ -20,21 +20,38 @@
 
 ---
 
-### 使用和调试
+### 使用效果演示
 
-```sh
-# 下载依赖
-pnpm i
+<img src="https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/electron.demo1.pic.jpg" height="250">
 
-# 启动
-npm run start
-```
+<img src="https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/electron.demo2.pic.jpg" height="250">
 
 ---
 
-## 安装包
+### 下载链接
 
-打包还在尝试...
+- [Mac系统（M系列芯片）](https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/chatmoss-arm64-1.5.3.zip)
+- [Mac系统（Intel芯片）](https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/chatmoss-x64-1.5.3.zip)
+
+tip：window 和 Linux 马上发布
+
+---
+
+### 使用和调试
+
+```sh
+# 下载依赖（亲测npm cnpm pnpm 安装都有问题，用yarn可以）
+yarn install
+
+# 启动
+npm run start
+
+# 打应用包
+npm run package
+
+# 打安装包
+npm run make
+```
 
 ---
 
