@@ -30,10 +30,9 @@
 
 ### 下载链接
 
+- [Window](https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/chatmoss-x64-1.5.3.zip)
 - [Mac系统（M系列芯片）](https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/chatmoss-arm64-1.5.3.zip)
 - [Mac系统（Intel芯片）](https://luomacode-1253302184.cos.ap-beijing.myqcloud.com/chatmoss/chatmoss-x64-1.5.3.zip)
-
-tip：window 和 Linux 马上发布
 
 ---
 
